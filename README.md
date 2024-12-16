@@ -1,6 +1,6 @@
 # Google Stock Price Prediction
 
-This project analyzes and predicts **Google Stock Prices (GOOG)** using Python. The notebook fetches data, preprocesses it, and applies machine learning and deep learning models for time series forecasting.
+This project analyzes and predicts **Google Stock Prices (GOOG)** using Python. The notebook fetches data, preprocesses it, and applies advanced deep learning models such as **RNN**, **LSTM**, and **GRU** for time series forecasting.
 
 ---
 
@@ -13,17 +13,17 @@ The notebook follows these main steps:
 
 2. **Data Preprocessing**
    - Splitting the data into training and testing sets.
-   - Scaling and reshaping the data to fit machine learning models.
+   - Scaling and reshaping the data to fit deep learning models.
 
 3. **Feature Engineering**
-   - Creating datasets with lag features for input to models.
+   - Creating datasets with lag features for input to RNN-based models.
 
 4. **Model Training and Evaluation**
    - Models implemented:
-     - **Logistic Regression** (baseline)
-     - **Support Vector Machine (SVM)**
-     - **Deep Learning Model** using Keras.
-   - Model performance metrics are compared.
+     - **RNN (Recurrent Neural Network)**
+     - **LSTM (Long Short-Term Memory)**
+     - **GRU (Gated Recurrent Unit)**
+   - The models are trained and evaluated for time series forecasting.
 
 5. **Results Visualization**
    - Visualizes predictions and actual stock prices.
@@ -35,7 +35,7 @@ The notebook follows these main steps:
 Make sure you have the following libraries installed:
 
 ```bash
-pip install yfinance keras-tuner scikit-learn matplotlib pandas numpy
+pip install yfinance keras-tuner scikit-learn matplotlib pandas numpy tensorflow
 ```
 
 ---
@@ -72,16 +72,16 @@ pip install yfinance keras-tuner scikit-learn matplotlib pandas numpy
 
 ## **Models Used**
 
-- **Logistic Regression**: Baseline model for prediction.
-- **SVM (Support Vector Machine)**: Improved accuracy for time series classification.
-- **Deep Learning**: A neural network-based model using the Keras library.
+- **RNN (Recurrent Neural Network)**: A simple sequential model for time series.
+- **LSTM (Long Short-Term Memory)**: Handles long-term dependencies for accurate forecasting.
+- **GRU (Gated Recurrent Unit)**: A lightweight alternative to LSTM for faster training.
 
 ---
 
 ## **Results**
 
 - Visualizations of predictions vs. actual stock prices.
-- Performance metrics (e.g., RMSE, MSE).
+- Performance metrics (e.g., RMSE, MSE) for each model.
 
 ---
 
@@ -97,4 +97,3 @@ Email: [alinaeimi2001@gmail.com](mailto:alinaeimi2001@gmail.com)
 ## **License**
 
 This project is licensed under the MIT License.
-
